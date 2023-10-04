@@ -6,10 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="dist/app.js" defer></script>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
-    <input id="input1">
-    <input id="input2">
-    <button id="button">Clique aqui</button>
+
+    <div id="main">
+        
+        <div id="search-container" class="pesquisaDiv">
+            <div class="query">
+                <input id="search" placeholder="Escreva...">
+                <button id="search-button">Pesquisar Filme</button>
+                <button id="loadMoreItems">Carregar Mais</button>
+            </div>
+            <div id="listaSection" class="results">
+
+            </div>
+        </div>
+
+        <div id="criarListaDiv">
+            <input type="text" id="listName" placeholder="DIgite o nome da lista">
+            <input type="text" id="listDescription" placeholder="DIgite a descricao da lista">
+            <button id="createList" type="button">Criar lista</button>
+            <div id="">
+                <button id="showList" type="button">Ver listas</button>
+                <ul id="ListsDiv"></ul>
+            </div>
+        </div>
+        <section id="sectionInfo">
+
+            <!-- <div>
+                <h1 class="mediaTitle"></h1>
+                <span class="mediaId"></span>
+            </div>
+            <div>
+                <p class="mediaOverview"></p>
+                <span class="mediaPopularity"></span>
+            </div> -->
+
+        </section>
+
+        <section>
+            <button type="button" onclick="showMainList()">Minha Lista Principal</button>
+            <div id="mainList"></div>
+        </section>
+      </div>
+
+      <section id="loginDiv">
+        <div class="loginInputs">
+            <input id="login" placeholder="Login" onchange="preencherLogin(event)">
+            <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+            <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+            <button id="login-button" disabled>Login</button>
+            <button id="loginFechar">Fechar</button>
+        </div>
+    </section>
+
 </body>
 </html>

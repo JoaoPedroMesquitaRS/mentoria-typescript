@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#loginDiv{
+    width: 100%;
+    background-color: #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid #2d7ed0;
+    bottom: 0;
+    position: fixed;
+}
+
+.loginInputs{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 4rem;
+    padding: 2rem 1rem 2rem 1rem;
+    justify-content: space-between;
+}
+
+.loginInputs input{
+    width: 20%;
+    padding: 0.40rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid #5d5d5d;
+}
+
+.loginInputs button{
+    padding: 0.40rem;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pesquisaDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #c2c2c2;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.query{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+#lista{
+    width: 48%;
+/*    display: flex;
+    flex-direction: row;*/
+}
+
+
+/**************************************/
+
+#criarListaDiv{
+    background-color: #2d7ed0;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#criarListaDiv input{
+    height: 1rem;
+    padding: 0.40rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid #5d5d5d;
+    width: 30%;
+}
+
+#criarListaDiv button{
+    padding: 0.40rem;
+    height: 2rem;
+}
